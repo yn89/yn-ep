@@ -1,0 +1,162 @@
+.brand_content{overflow: hidden;}
+.brand_img{
+    transition:all 1.5s linear;
+}
+.brand_img:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}
+.my_small{
+    font-size: 0.9rem;
+    color: #000;
+}
+.my_small>li>a{
+    color: #686868;
+}
+.my_small>li>a:hover{
+    color:#cc9b38;
+    text-decoration: none;
+}
+ul.product_type>li>ul{
+    padding-left: 2rem !important;
+}
+.product_type>li{
+    border-bottom: 1px solid #A7A7A7;
+    padding: 0.8rem 0;
+}
+ul.product_type span{
+    padding-left: 20px;
+    background: url("../img/openIcon.png") no-repeat center left;
+    background-size: 12px;
+    cursor: pointer;
+}
+ul.product_type span:hover{
+    color:#cc9b38;
+    background: url("../img/openIcon_hover.png") no-repeat center left;
+    background-size: 12px;
+}
+ul.product_type li ul{
+    display: none;
+}
+ul.product_type span.open{
+    background: url("../img/closeIcon.png") no-repeat center left;
+    background-size: 12px;
+}
+ul.product_type span.open:hover{
+    background: url("../img/closeIcon_hover.png") no-repeat center left;
+    background-size: 12px;
+}
+ul.product_type>li>.open+ul{
+    display: block;
+}
+@media screen and (max-width:575px){
+    .my-col-sm-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+ul#product_right li.productBlock{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+ul#product_right li.productBlock>a{
+    display: block;
+}
+.product_bg{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.5);
+    z-index: 5;
+    text-align: center;
+    cursor: pointer;
+}
+.open{display: block;}
+.product_bg .product_content{
+    font-size: 0.8rem;
+   margin-top: 50%;
+}
+.product_bg .product_content h5{
+    font-size: 1.5em;
+    color:#000;
+}
+.product_bg span.blackLine{
+    border-bottom: 4px solid #000;
+    display: block;
+    width: 2rem;
+    margin: 0 auto;
+}
+@media screen and (max-width: 992px) and (min-width:771px){
+    .my-col-md-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/*product-detail*/
+#detail_info p{
+    margin-bottom: 0.5rem;
+}
+.p-share-01,.p-share-02{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    margin-right: 15px;
+    background: url("../img/mail.png") no-repeat; }
+.p-share-01{
+    background-position: 0px -48px;
+}
+.p-share-02{
+    background-position: -46px -48px;
+}
+.p-share-01:hover{
+    background-position: 0px 0px;
+}
+.p-share-02:hover{
+    background-position: -46px 0px;
+}
+.p-detail h6{
+    background: url("../img/openIcon.png") right center no-repeat;
+    background-size: 15px;
+    border-bottom: 1px solid #A7A7A7;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.p-detail h6:hover{
+    background: url("../img/openIcon_hover.png") right center no-repeat;
+    background-size: 15px;
+    color:#dd980c;
+}
+.p-detail h6.open{
+    background: url("../img/closeIcon.png") right center no-repeat;
+    background-size: 15px;
+    border-bottom: 1px solid #A7A7A7;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.p-detail h6.open:hover{
+    background: url("../img/closeIcon_hover.png") right center no-repeat;
+    background-size: 15px;
+    color:#dd980c;
+}
+.p-detail h6+div{
+    display: none;
+}
+.p-detail>h6.open+div{display: block;}
+.p-detail-list{list-style: none;}
+.p-detail-list li{
+    float: left;
+    width: 150px;
+    margin-bottom: 5px;
+    border: 0px;
+}
+.clear{clear: both;}
